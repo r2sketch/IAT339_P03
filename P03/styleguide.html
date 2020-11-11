@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Styleguide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap css -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css" media="screen">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css" media="screen">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+
+</head>
+
+<body>
+  <!-- Bootstrap javascripts -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/javascript.js"></script>
+
+  <nav class="topnav" id="myTopnav">
+  <a href="#contact">Contact</a>
+  <a href="rtr.html">Designs</a>
+  <a href="#about">About</a>
+  <a href="#home" class="active">Home</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</nav>
+<div class="container">
+  <section>
+    <h1>Introduction</h1>
+    <p>Welcome to my style guide! I'm Kelly, an artist, programmer, and third-year student at Simon Fraser University majoring in design at the School of Interactive Arts and Technology with a minor in computer science. I’ve always had a passion for programming, design, and illustration; something I thought as a mismatched combination. Now, after experiencing numerous fields of design, I realized my understanding of both visual arts and technology is essential as an aspiring UI/UX developer and in digital design. I hope to combine my proficiency in design tools with frontend technologies and back-end technologies to create enjoyable everyday experiences for users.</p>
+  </section>
+  <hr>
+  <section>
+  <div class="row-fluid">
+    <h1>Colours</h1>
+    <div class="span2 bg-white color-block">#FFFFFF</div>
+    <div class="span2 bg-bittersweet color-block">#FF6663</div>
+    <div class="span2 bg-mustard color-block">#FFD445</div>
+    <div class="span2 bg-maximum-blue color-block">#2CB5DB</div>
+    <div class="span2 bg-black color-block">#000000</div>
+  </div>
+  </section>
+  <hr>
+  <section>
+    <h1>Tyography</h1>
+    <br>
+    <h1>H1: Poppins</h1>
+    <h2>H2: Poppins Light</h2>
+    <h3>H3: Poppins Light</h3>
+    <h4>H4: Poppins Light</h4>
+    <h5>H5: PT Serif</h5>
+
+    <p>Paragraph: Helvetica Neue.</p>
+    <cite>Cite: Citations 2020</cite>
+  </section>
+  <hr>
+  <section>
+   <h1>In-text link</h1>
+   <p>This is an example of an <a href="">in-text link</a>.</p>
+   <h3> CSS Selector: </h3>
+   <p>a</p>
+   <h3> Sample code: </h3>
+   <code>&lt;a href=&quot;&quot;&gt;in-text link&lt;/a&gt;</code>
+  </section>
+  <hr>
+  <section>
+    <h1>Input Field with Label</h1>
+    <label for="label">Label</label>
+    <input type="text" id="label" name="label" value="">
+    <h3> CSS Selector: </h3>
+    <p>label, input</p>
+    <h3> Sample code: </h3>
+    <code>    &lt;label for=&quot;label&quot;&gt;Label&lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;label&quot; name=&quot;label&quot; value=&quot;&quot;&gt;
+</code>
+  </section>
+  <hr>
+  <section>
+    <h1>Radio Button with Label</h1>
+    <label class="radio-inline">
+      <input type="radio" name="optradio" checked>Option 1
+    </label>
+    <h3> CSS Selector: </h3>
+    <p>label, input</p>
+    <h3> Sample code: </h3>
+    <code>&lt;label class=&quot;radio-inline&quot;&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;optradio&quot; checked&gt;Option 1
+    &lt;/label&gt;
+    </code>
+    </section>
+  <hr>
+  <section>
+   <h1>Buttons</h1>
+   <button type="button" class="button">Button</button>
+   <h3> CSS Selector: </h3>
+   <p>.button</p>
+   <h3> Sample code: </h3>
+   <code>   &lt;button type=&quot;button&quot; class=&quot;button&quot;&gt;Button&lt;/button&gt;</code>
+  </section>
+  <hr>
+  <section>
+   <h1>Navigation Link</h1>
+   <nav class="topnav">
+   <a href="#home" class="topnav">Home</a>
+   </nav>
+   <h3> CSS Selector: </h3>
+   <p>nav, .topnav</p>
+   <h3> Sample code: </h3>
+   <code>&lt;nav class=&quot;topnav&quot;&gt;
+   &lt;a href=&quot;#home&quot; class=&quot;active topnav&quot;&gt;Home&lt;/a&gt;
+   &lt;/nav&gt;</code>
+  </section>
+  <hr>
+  <section>
+  <h1>Lists</h1>
+  <h3>Unordered</h3>
+  <ul>
+    <li> Item 1 </li>
+    <li> Item 2 </li>
+    <li> Item 3 </li>
+    <li> Item 4 </li>
+  </ul>
+  <h3>Ordered</h3>
+  <ol>
+    <li> Item 1 </li>
+    <li> Item 2 </li>
+    <li> Item 3 </li>
+    <li> Item 4 </li>
+  </ol>
+  <h3> CSS Selector: </h3>
+  <p>ul, ol</p>
+  <h3> Sample code: </h3>
+  <code>  &lt;ul&gt;
+    &lt;li&gt; Item 1 &lt;/li&gt;
+    &lt;li&gt; Item 2 &lt;/li&gt;
+    &lt;li&gt; Item 3 &lt;/li&gt;
+    &lt;li&gt; Item 4 &lt;/li&gt;
+  &lt;/ul&gt;
+</code>
+  </section>
+  <hr>
+  <section>
+   <h1>Image as a Link</h1>
+   <a href=""><img src="images/marshtako.png" alt="Image as a link test"></a>
+   <h3> CSS Selector: </h3>
+   <p>a img</p>
+   <h3> Sample code: </h3>
+   <code>   &lt;a href=&quot;&quot;&gt;&lt;img src=&quot;images/marshtako.png&quot; alt=&quot;Image as a link test&quot;&gt;&lt;/a&gt;
+  </code>
+  </section>
+  <hr>
+  <section>
+  <h1>Contact Form</h1>
+  <form action="">
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+  <label for="country">Country</label>
+  <select id="country" name="country">
+    <option value="australia">Australia</option>
+    <option value="canada">Canada</option>
+    <option value="usa">USA</option>
+  </select>
+
+  <label for="subject">Subject</label>
+  <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+  <br>
+  <input type="submit" value="Submit" class="button">
+</form>
+<h3> CSS Selector: </h3>
+<p>form, label, input</p>
+<h3> Sample code: </h3>
+<code>  &lt;form action=&quot;&quot;&gt; <br>
+  &lt;label for=&quot;fname&quot;&gt;First Name&lt;/label&gt; <br>
+  &lt;input type=&quot;text&quot; id=&quot;fname&quot; name=&quot;firstname&quot; <br> placeholder=&quot;Your name..&quot;&gt; <br>
+
+  &lt;label for=&quot;lname&quot;&gt;Last Name&lt;/label&gt; <br>
+  &lt;input type=&quot;text&quot; id=&quot;lname&quot; name=&quot;lastname&quot; <br> placeholder=&quot;Your last name..&quot;&gt; <br>
+
+  &lt;label for=&quot;country&quot;&gt;Country&lt;/label&gt; <br>
+  &lt;select id=&quot;country&quot; name=&quot;country&quot;&gt; <br>
+    &lt;option value=&quot;australia&quot;&gt;Australia&lt;/option&gt; <br>
+    &lt;option value=&quot;canada&quot;&gt;Canada&lt;/option&gt; <br>
+    &lt;option value=&quot;usa&quot;&gt;USA&lt;/option&gt; <br>
+  &lt;/select&gt; <br>
+
+  &lt;label for=&quot;subject&quot;&gt;Subject&lt;/label&gt; <br>
+  &lt;textarea id=&quot;subject&quot; name=&quot;subject&quot; placeholder=&quot;Write something..&quot;&gt;&lt;/textarea&gt; <br>
+  &lt;br&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt; <br>
+&lt;/form&gt; <br>
+</code>
+</section>
+<hr>
+<section>
+ <h1>Templates</h1>
+ <a href="rtr.html"><img src="images/template.png" alt="Process analysis page template" style="width:50%"></a>
+</section>
+<hr>
+<section>
+ <h1>Citations</h1>
+ <a href="https://getbootstrap.com/">Bootstrap framework</a>
+</section>
+</div>
+
+<footer class="footer bg-maximum-blue">
+  <div class="container">
+    <div class="span7">
+      <h4>USEFUL LINKS</h4>
+      <hr>
+      <a href=""> Git </a>
+      <br>
+      <a href="styleguide.html"> Style guide </a>
+    </div>
+    <div class="span4">
+      <h4>CONTACT</h4>
+      <hr>
+      <i class="fa fa-envelope"></i>&nbsp; info@example.com
+      <br>
+      <i class="fa fa-phone"></i>&nbsp;  + 01 234 567 88
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
