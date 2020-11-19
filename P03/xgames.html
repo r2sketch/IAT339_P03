@@ -16,93 +16,106 @@
 
   <body>
     <nav class="topnav" id="myTopnav">
-    <a href="#contact">Contact</a>
-    <a href="rtr.html">Designs</a>
-    <a href="#about">About</a>
-    <a href="#home" class="active">Home</a>
+    <div class="container">
+    <a href="about.html" class="float-right">About</a>
+    <a href="index.html" class="active float-right">Work</a>
+    <a href="index.html" class="name float-left">Kelly Kong</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
+  </div>
   </nav>
 
 
-  <div class="container">
+    <div class="container">
     <div class="row-fluid">
-     <div class="span5">
+     <div class="span6">
        <h2>XGAMES</h2>
        <h3>server-sided web application.</h3>
        <h3>fall 2020.</h3>
        <p>
-         For SIAT’s third-year internet computing technologies class, I researched and designed a digital solution to address the lack of an unbiased centralized source of information on rig to reefs. With my teammate, we created a website (Figures 1 & 2) that educates laypeople about artificial reefs in a visually digestible manner. The scope of this project was quite large, so I’ll only explain my process in designing the website.
+        For SIAT’s third-year internet computing technologies class, we were assigned to create a database-powered website with user management using HTML, CSS, PHP, AJAX, and MySQL. In my team of 3, we created a shopping website that supports product filtering and searching, secure authentication handling, member registration and login, and tracking of orders and products using MySQL database (Figure 1 & 2). One of my main tasks for this project was to design the database that will hold all the incoming user data and outgoing products information, as such I will explain my process with focus on this aspect.
        </p>
      </div>
-     <div class="span7"><img src="images/xgames.png" alt="XGAMES website first working prototype">
-     </div>
-   </div>
-   <div class="row-fluid">
-    <div class="span5">
-      <h3>prototyping</h3>
-       <p>
-         I created our first prototype using HTML and CSS with placeholder
-         images and texts as seen in Figure 6. However, I quickly ran into issues
-         provoked by the layout’s concept. The illustration of the infinitely long
-         oil platform legs forced all the textual information to be compressed on
-         one side of the page, causing the experience to feel repetitive and
-         stagnant. It was also difficult to balance playfulness and professionalism
-         in the design. The overabundance in colour and lighthearted interactions
-         seemed ill-fitting for a controversial topic like RTR.
-       </p>
-     </div>
-     <div class="span7">
-       <img src="images/xgames1.png" alt="XGAMES website first working prototype">
-       <cite>Figure 1-2: Kong, K (Fall 2020). XGAMES website [Screenshot]. </cite>
-     </div>
-   </div>
-   <div class="row-fluid">
-    <div class="span12">
-      <h3>database design</h3>
-       <p>
-         While researching RTR, I was inspired by the images depicting the liveliness and
-         depth of biotic reefs created from oil rigs as seen in Figure 3. I desired to recreate the same impression with our site so I began sketching layouts on Photoshop with this idea in mind. After considering the visual appeal, user habits, readability, and interactivity, my design (Figures 4 & 5) was chosen to be the framework of our website.
-       </p>
+     <div class="span6"><img src="images/xgames.PNG" alt="Impact of Rigs to Reefs in USA homepage">
      </div>
    </div>
    <br>
    <div class="row-fluid">
     <div class="span6">
-      <img src="images/excel.png" alt="XGAMES database in an Excel spreadsheet">
-      <cite>Figure 3: Kong, K (Fall 2020). Original XGAMES database in an Excel spreadsheet [Screenshot]. </cite>
      </div>
      <div class="span6">
-       <img src="images/database.png" alt="Database constructed based on Excel spreadsheet and entity relationship diagram (ERD) in MySQL">
-    <cite>Figure 4: Kong, K (Fall 2020). Database constructed based on Excel spreadsheet and entity relationship diagram (ERD) in MySQL phpMyAdmin [Screenshot]. </cite>
-
+       <img src="images/xgames1.PNG" alt="Impact of Rigs to Reefs in USA homepage">
+       <cite>Figure 1-2: Kong, K (Spring 2019). Impact of Rigs to Reefs in USA website [Screenshot]. </cite>
+     </div>
+   </div>
+   <br>
+   <div class="row-fluid">
+    <div class="span6">
+      <h3>understanding the data structure</h3>
+       <p> To design the database for the website, I studied the products data provided to me in an Excel sheet carefully to understand what type of data we must store for the products. I also outlined every function of the website concisely prior to fully grasp what sort of tables, columns, and relationship the database needs.        </p>
+     </div>
+     <div class="span6">
+       <img src="images/excel.PNG" alt="Rainbow Warrior in her final resting place 26 meters below the sea off the coast of Matauri Bay, Far North, New Zealand">
+       <cite>Figure 3: Grace, R (2017). Inspiration [Digital image]. Retrieved from
+   https://mission-blue.org/2017/07/viewpoints-rigs-to-reefs/ </cite>
+     </div>
+   </div>
+   <br>
+   <div class="row-fluid">
+    <div class="span6">
+     </div>
+     <div class="span6">
+       <img src="images/details.PNG" alt="Sketches of potential layouts made in
+    Adobe Illustrator">
       </div>
-      <div class="span12">
-        <img src="images/erdia.png" alt="Entity relationship diagram for the XGAMES database">
-        <cite>Figure 5: Kong, K (Fall 2020). Entity relationship diagram for the XGAMES database created in Figma [Screenshot]. </cite>
-      </div>
-
+   </div>
+   <br><br>
+   <div class="row-fluid">
+    <div class="span6 paragraph_padding_top">
+      <h3>ER diagram</h3>
+       <p>
+        With this information in mind, I began by creating an entity relationship (ER) diagram to show the relationships of each entity set stored in the database. ER diagrams are often used to sketch out the design of a database as a means of visualizing how the information a system produces is related. It was helpful to me to be able to quickly visualize the basic database structure prior to creating it using SQL in MySQL.
+       </p>
+     </div>
+     <div class="span6">
+       <img src="images/erdia.PNG" alt="Impact of Rigs to Reefs in USA website first working prototype">
+       <cite>Figure 6: Kong, K (Spring 2019). Impact of Rigs to Reefs in USA website first working prototype [Screenshot]. </cite>
+     </div>
+   </div>
+   <div class="row-fluid">
+    <div class="span6 paragraph_padding_top">
+      <h3>MySQL database</h3>
+       <p>
+        While referencing the ER diagram, I then used SQL commands in MySQL to create the database; translating each entity to a table and each attribute as a column for that table. Relationships outlined in the ER diagram were also transferred into the MySQL database, using foreign and reference keys to the main entities’ tables.
+       </p>
+     </div>
+     <div class="span6">
+       <img src="images/refdata.PNG" alt="Impact of Rigs to Reefs in USA website first working prototype">
+       <cite>Figure 6: Kong, K (Spring 2019). Impact of Rigs to Reefs in USA website first working prototype [Screenshot]. </cite>
+     </div>
+   </div>
+   <div class="row-fluid">
+    <div class="span6 paragraph_padding_top">
+       <p>
+As this was my first time creating a server sided web application, I had to revisit the ER diagram and recreate the MySQL database multiple times before finalizing it. Specifically, when it was time to connect the database to the website, we found that the database did not store data in the way I expected to. For example, one of our earlier renditions of the database did not have a separate order details table and only an orders table. With this, the database could not store multiple products in an order placed by a user. However, through studying examples of MySQL databases available online, I was able to create the database as seen in Figure x that is fully functional with the website, storing all the needed data.        </p>
+<p>Overall, this project was successful because not only was it well regarded by the instructing team, but it also allowed me to practice designing and creating databases. </p>
+     </div>
+     <div class="span6">
+       <img src="images/database.PNG" alt="Impact of Rigs to Reefs in USA website first working prototype">
+       <cite>Figure 6: Kong, K (Spring 2019). Impact of Rigs to Reefs in USA website first working prototype [Screenshot]. </cite>
+     </div>
    </div>
    </div>
 
-   <footer class="footer bg-maximum-blue">
+   <footer class="footer bg-black">
      <div class="container">
-       <div class="span7">
-         <h4>USEFUL LINKS</h4>
-         <hr>
-         <a href=""> Git </a>
-         <br>
+         <h3>Let's connect: <a href="mailto:kka92@sfu.ca">kka92@sfu.ca</a></h3>
+         <a href="https://github.com/r2sketch/IAT339_P03"> Git </a>
          <a href="styleguide.html"> Style guide </a>
-       </div>
-       <div class="span4">
-         <h4>CONTACT</h4>
-         <hr>
-         <i class="fa fa-envelope"></i>&nbsp; info@example.com
-         <br>
-         <i class="fa fa-phone"></i>&nbsp;  + 01 234 567 88
+         <a href="#top" class="float-right">Back to top</a>
 
-       </div>
+         <p>last updated November 2020</p>
      </div>
    </footer>
 

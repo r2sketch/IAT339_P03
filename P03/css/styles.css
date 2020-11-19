@@ -1,3 +1,10 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: table;
+}
+
 a {
   color: #2CB5DB;
 }
@@ -27,6 +34,7 @@ a img:hover {
 
 .container {
   margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 cite {
@@ -86,34 +94,64 @@ font-weight:normal;
 font-style:normal;
 }
 
-/* Navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #2CB5DB;
+p  {
+font-size: 1.1em;
 }
 
-.topnav a {
-  float: right;
-  display: block;
-  color: #fff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+.intro {
   font-size: 1.2em;
 }
 
+/* Navigation bar */
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  display: block;
+  color: #636363;
+  text-align: center;
+  padding-bottom: 5px;
+  margin: 14px 16px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: 'poppinsregular', Arial, sans-serif;
+}
+
 .topnav a:hover {
-  background-color: #fff;
+  border-bottom: 3px solid #FFD445;
   color: black;
 }
 
 .topnav a.active {
-  background-color: #FFD445;
+  border-bottom: 3px solid #FF6663;
   color: black;
 }
 
 .topnav .icon {
   display: none;
+}
+
+.topnav .float-right {
+  float: right;
+}
+
+.topnav .float-left {
+  float: left;
+}
+
+.topnav .name {
+  font-size: 1.3em;
+}
+
+.paragraph_padding_top {
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+
+.paragraph_padding {
+  padding-top: 2%;
+  padding-bottom: 2%
 }
 
 @media screen and (max-width: 600px) {
@@ -139,21 +177,33 @@ font-style:normal;
 }
 
 /* Footer */
+footer h3 {
+  color:white;
+}
+
 footer .container {
   padding: 1%;
 }
+
 footer a {
+  color: white;
+  padding-right: 10px;
+  font-family: 'poppinsregular', Arial, sans-serif;
+}
+
+footer a:hover {
   color: white;
 }
 
-footer hr{
-  width: 60px;
+footer p {
+  padding-top: 15px;
 }
 
-footer h4 {
-  font-weight: bold;
+footer .float-right{
+  float: right;
 }
 
-.fa {
-  font-size: 1.2em;
+footer {
+    display: table-row;
+    height: 0;
 }
