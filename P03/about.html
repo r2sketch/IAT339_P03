@@ -24,7 +24,12 @@
 
   <div class="container">
   <div class="row-fluid">
-    <div class="span6"><img src="images/aimi.jpg" alt="Photo of me">
+    <div class="span6">
+      <picture>
+        <source media="(max-width: 760px)" srcset="images/aimires.jpg">
+        <source media="(min-width: 800px)" srcset="images/aimi.jpg">
+        <img src="images/aimi.jpg" alt="Photo of me">
+     </picture>
     </div>
    <div class="span6">
      <h2>Hello, world!</h2>
