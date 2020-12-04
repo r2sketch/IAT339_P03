@@ -1,16 +1,21 @@
+$white: #fff;
+$bittersweet: #ff6663;
+$mustard: #ffd445;
+$blue: #2cb5db;
+
 html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  display: table;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: table;
 }
 
 a {
-  color: #2cb5db;
+  color: $blue;
 }
 
 .button {
-  background-color: #2cb5db;
+  background-color: $blue;
   border: none;
   color: white;
   padding: 1% 2%;
@@ -23,7 +28,7 @@ a {
   border-radius: 5%;
 }
 
-.button:hover {
+.button:hover{
   background-color: #39c6ed;
   /* color: black; */
 }
@@ -43,26 +48,26 @@ cite {
 }
 
 /* Color Palettes */
-.bg-white {
-  background-color: #fff;
+.bg-white{
+  background-color: $white;
   border: 1px solid;
   border-color: #dbdbdb;
 }
 
-.bg-bittersweet {
-  background-color: #ff6663;
+.bg-bittersweet{
+  background-color: $bittersweet;
 }
 
-.bg-mustard {
-  background-color: #ffd445;
+.bg-mustard{
+  background-color: $mustard;
 }
 
-.bg-maximum-blue {
-  background-color: #2cb5db;
+.bg-maximum-blue{
+  background-color: $blue;
   color: white;
 }
 
-.bg-black {
+.bg-black{
   background-color: #000;
   color: #8f8f8f;
 }
@@ -73,29 +78,29 @@ cite {
 
 /* Typography */
 h1 {
-  font-family: "poppinsregular", Arial, sans-serif;
-  font-style: normal;
+font-family: 'poppinsregular', Arial, sans-serif;
+font-style:normal;
 }
 
 h2 {
-  font-family: "poppinslight", Arial, sans-serif;
-  font-style: normal;
+font-family: 'poppinslight', Arial, sans-serif;
+font-style:normal;
 }
 
 h3, h4 {
-  font-family: "poppinslight", Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
+font-family: 'poppinslight', Arial, sans-serif;
+font-weight:normal;
+font-style:normal;
 }
 
 h5 {
-  font-family: "pt_serifregular", Times, serif;
-  font-weight: normal;
-  font-style: normal;
+font-family: "pt_serifregular", Times, serif;
+font-weight:normal;
+font-style:normal;
 }
 
-p {
-  font-size: 1.1em;
+p  {
+font-size: 1.1em;
 }
 
 .intro {
@@ -115,16 +120,16 @@ p {
   margin: 14px 16px;
   text-decoration: none;
   font-size: 1.2em;
-  font-family: "poppinsregular", Arial, sans-serif;
+  font-family: 'poppinsregular', Arial, sans-serif;
 }
 
 .topnav a:hover {
-  border-bottom: 3px solid #ffd445;
+  border-bottom: 3px solid $mustard;
   color: black;
 }
 
 .topnav a.active {
-  border-bottom: 3px solid #ff6663;
+  border-bottom: 3px solid $bittersweet;
   color: black;
 }
 
@@ -151,12 +156,13 @@ p {
 
 .paragraph_padding {
   padding-top: 2%;
-  padding-bottom: 2%;
+  padding-bottom: 2%
 }
+
 
 /* Footer */
 footer h3 {
-  color: white;
+  color:white;
 }
 
 footer .container {
@@ -166,7 +172,7 @@ footer .container {
 footer a {
   color: white;
   padding-right: 10px;
-  font-family: "poppinsregular", Arial, sans-serif;
+  font-family: 'poppinsregular', Arial, sans-serif;
 }
 
 footer a:hover {
@@ -177,13 +183,13 @@ footer p {
   padding-top: 15px;
 }
 
-footer .float-right {
+footer .float-right{
   float: right;
 }
 
 footer {
-  display: table-row;
-  height: 0;
+    display: table-row;
+    height: 0;
 }
 
 @media (max-width: 767px) {
